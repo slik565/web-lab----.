@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>Форма зворотного зв'язку — Міщук Іван</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{ font-family: Arial, sans-serif; padding:20px; background:#f9fbfe; }
+    .card{ width:600px; margin:20px auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.08); }
+    label{ display:block; margin-top:10px; }
+    input[type="text"], input[type="email"], textarea { width:100%; padding:8px; margin-top:6px; box-sizing:border-box; }
+    button { margin-top:12px; padding:10px 14px; border:none; border-radius:4px; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Зв'язатися зі мною</h1>
+    <form action="#" method="post">
+      <label for="name">Ім'я <span style="color:red">*</span></label>
+      <input id="name" name="name" type="text" required>
+      <label for="email">Email <span style="color:red">*</span></label>
+      <input id="email" name="email" type="email" required>
+      <label for="subject">Тема</label>
+      <input id="subject" name="subject" type="text">
+      <label for="message">Повідомлення <span style="color:red">*</span></label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+      <button type="submit">Надіслати</button>
+    </form>
+  </div>
+</body>
+</html>
